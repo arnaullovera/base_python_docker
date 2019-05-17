@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  mainmachine:
+    build: ./Dockerfile
+    volumes:
+      - /path/to/code/:/projects/project_name/code/
+      - /path/to/data/:/projects/project_name/data/
+      - /path/to/output/:/projects/project_name/outputs/
+      - /path/to/tmp/:/projects/project_name/tmp/
+    
+    
+    
